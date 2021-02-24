@@ -37,7 +37,7 @@ async def on_message(message):
                 badge = "bot"
             else:
                 badge = None
-            entities["users"][str(user.id)] = {"username": member.name, "discriminator": member.discriminator, "avatar": str(member.avatar_url_as(static_format="png")), "badge": badge}
+            entities["users"][str(member.id)] = {"username": member.name, "discriminator": member.discriminator, "avatar": str(member.avatar_url_as(static_format="png")), "badge": badge}
 
         if message.attachments:
             data["messages"].append({
