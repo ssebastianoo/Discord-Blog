@@ -1,2 +1,2 @@
 #/bin/bash
-nodemon index.js & python3 main.py
+nodemon index.js & python3 bot.py
