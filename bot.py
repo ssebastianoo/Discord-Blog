@@ -49,6 +49,9 @@ async def on_message(message):
             })
 
         else:
+            if len(message.content) == 0:
+                return
+                
             data["messages"].append({
               "id": str(message.id),
               "author": str(message.author.id),

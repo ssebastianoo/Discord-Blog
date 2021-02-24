@@ -10,13 +10,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'/>
     <title>#<%= data.channel_name %></title>
 
-    <meta name='theme-color' content='#affaff'/>
+    <meta name='theme-color' content='#7289DA'/>
     <meta property='og:locale' content='en_US'/>
-    <meta property='og:title' content='Discord Chat Archive'/>
-    <meta property='og:site_name' content='NailaBot'/>
-    <meta property='og:url' content='https://archive.naila.bot/'/>
-    <meta property='og:image' content='https://avatars.githubusercontent.com/u/54024876'/>
-    <meta property='og:description' content='Chat archive of #<%= data.channel_name %>'/>
+    <meta property='og:title' content='A Blog'/>
+    <meta property='og:site_name' content='A Blog'/>
+    <meta property='og:url' content='http://blog.seba.gq/'/>
+    <meta property='og:image' content='https://media.discordapp.net/attachments/611325092269522944/803523704608391168/image3-1-1.gif'/>
+    <meta property='og:description' content='a nice blog'/>
     <link rel='shortcut icon' href='https://discord.com/assets/28174a34e77bb5e5310ced9f95cb480b.png'/>
 
     <meta name='twitter:card' content='summary'/>
@@ -26,6 +26,7 @@
     <link rel='stylesheet' href='https://highlightjs.org/static/demo/styles/solarized-dark.css'/>
     <style><%- assets.style %></style>
     <script>
+        window.scrollTo(0, document.body.scrollHeight);
         window.GLOBAL_ENV = { HOSTNAME: '<%= hostname %>' };
         <%- assets.script %>
     </script>
