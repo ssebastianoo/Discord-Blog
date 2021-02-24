@@ -16,7 +16,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.channel.id == config["channel"]:
-        file = open("example.json", "r")
+        file = open("discord.json", "r")
         data = json.load(file)
         file.close()
         entities = data["entities"]
@@ -56,7 +56,7 @@ async def on_message(message):
               "content": message.content
             })
 
-        with open("example.json", "w") as f:
+        with open("discord.json", "w") as f:
             json.dump(data, f, indent=4)
 
 bot.run(config["token"])
