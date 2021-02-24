@@ -16,7 +16,7 @@ const Formatter = require('./src/formatter')
 // Stuff
 const assets = require('./src/assets')
 const config = require('./config')
-const testData = require('./example')
+var testData = require('./example')
 
 require('http')
   .createServer((req, res) => {
@@ -58,7 +58,7 @@ require('http')
       return
     }
 
-    // Serve
+    // Server
     const handler = async (data) => {
       const fm = new Formatter(data)
       const formatted = await fm.format()
