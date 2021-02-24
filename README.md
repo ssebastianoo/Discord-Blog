@@ -1,16 +1,5 @@
-# Discord Chat Replica
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Naila/Discord-chat-replica)](https://dependabot.com)
+# Discord Blog
+A fork from [Discord Chat Replica](https://github.com/Naila/Discord-chat-replica) to sync an actual discord channel with the tool.
 
-A small microservice to generate a Discord-like chat section.
-
-## installation
-~~you dont~~
-
- - git clone
- - pnpm i
- - pnpm run build
- - create config.json
- - pm2 start pm2.json
-
-## request format
-see example.json
+# Setup
+Follow the original installation, but run both `python3 bot.py` and `nodemon index.js` (`npm install nodemon -g`) and add 
