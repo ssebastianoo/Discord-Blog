@@ -6,4 +6,5 @@ node_modules
 
 # prod memes
 config.json
+discord.json
 dist

@@ -16,7 +16,7 @@ const Formatter = require('./src/formatter')
 // Stuff
 const assets = require('./src/assets')
 const config = require('./config')
-var testData = require('./example')
+var discordData = require('./discord')
 
 require('http')
   .createServer((req, res) => {
@@ -91,6 +91,6 @@ require('http')
       req.on('data', chunk => (data += chunk))
       req.on('end', () => handler(JSON.parse(data)))
     } else {
-      return handler(testData)
+      return handler(discordData)
     }
   }).listen(config.port)
